@@ -7,19 +7,24 @@
 //
 
 import UIKit
+import HNALoading
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.view.layer.contents = UIImage(named: "far_cry_4_yeti")?.cgImage
+        self.view.contentMode = .scaleAspectFill
+        HNALoading.getInstance.startCircling(parentView: self.view)
+        let stopBtn = UIButton(frame: CGRect(x: self.view.center.x-40, y: 600, width: 80, height: 30))
+        self.view.addSubview(stopBtn)
+        stopBtn.addTarget(self, action: #selector(stop), for: .touchUpInside)
+        stopBtn.setTitle("STOP", for: .normal)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @objc func stop(){
+        HNALoading.getInstance.stopCircling()
     }
-
 
 }
 

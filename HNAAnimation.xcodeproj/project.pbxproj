@@ -7,12 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09461B602044EE5D0086BAB9 /* HNALoading.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097F66B62043F5E0000095A1 /* HNALoading.framework */; };
+		09461B612044EE5D0086BAB9 /* HNALoading.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 097F66B62043F5E0000095A1 /* HNALoading.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		097F668B2043F5A7000095A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F668A2043F5A7000095A1 /* AppDelegate.swift */; };
 		097F668D2043F5A7000095A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F668C2043F5A7000095A1 /* ViewController.swift */; };
 		097F66902043F5A7000095A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097F668E2043F5A7000095A1 /* Main.storyboard */; };
 		097F66922043F5A7000095A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097F66912043F5A7000095A1 /* Assets.xcassets */; };
 		097F66952043F5A7000095A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097F66932043F5A7000095A1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09461B622044EE5D0086BAB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 097F66B12043F5DF000095A1 /* HNALoading.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 097F66A52043F5DF000095A1;
+			remoteInfo = HNALoading;
+		};
+		097F66B52043F5E0000095A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 097F66B12043F5DF000095A1 /* HNALoading.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 097F66A62043F5DF000095A1;
+			remoteInfo = HNALoading;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		09461B642044EE5D0086BAB9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				09461B612044EE5D0086BAB9 /* HNALoading.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		097F66872043F5A7000095A1 /* HNAAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNAAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +55,7 @@
 		097F66912043F5A7000095A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		097F66942043F5A7000095A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		097F66962043F5A7000095A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		097F66B12043F5DF000095A1 /* HNALoading.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HNALoading.xcodeproj; path = HNALoading/HNALoading.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09461B602044EE5D0086BAB9 /* HNALoading.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +73,7 @@
 		097F667E2043F5A7000095A1 = {
 			isa = PBXGroup;
 			children = (
+				097F66B12043F5DF000095A1 /* HNALoading.xcodeproj */,
 				097F66892043F5A7000095A1 /* HNAAnimation */,
 				097F66882043F5A7000095A1 /* Products */,
 			);
@@ -64,6 +100,14 @@
 			path = HNAAnimation;
 			sourceTree = "<group>";
 		};
+		097F66B22043F5DF000095A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				097F66B62043F5E0000095A1 /* HNALoading.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,10 +118,12 @@
 				097F66832043F5A7000095A1 /* Sources */,
 				097F66842043F5A7000095A1 /* Frameworks */,
 				097F66852043F5A7000095A1 /* Resources */,
+				09461B642044EE5D0086BAB9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				09461B632044EE5D0086BAB9 /* PBXTargetDependency */,
 			);
 			name = HNAAnimation;
 			productName = HNAAnimation;
@@ -111,12 +157,28 @@
 			mainGroup = 097F667E2043F5A7000095A1;
 			productRefGroup = 097F66882043F5A7000095A1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 097F66B22043F5DF000095A1 /* Products */;
+					ProjectRef = 097F66B12043F5DF000095A1 /* HNALoading.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				097F66862043F5A7000095A1 /* HNAAnimation */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		097F66B62043F5E0000095A1 /* HNALoading.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HNALoading.framework;
+			remoteRef = 097F66B52043F5E0000095A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		097F66852043F5A7000095A1 /* Resources */ = {
@@ -142,6 +204,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09461B632044EE5D0086BAB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HNALoading;
+			targetProxy = 09461B622044EE5D0086BAB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		097F668E2043F5A7000095A1 /* Main.storyboard */ = {
@@ -273,10 +343,12 @@
 		097F669A2043F5A7000095A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ALC8X8425P;
 				INFOPLIST_FILE = HNAAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hna.eking.lili.HNAAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,10 +360,12 @@
 		097F669B2043F5A7000095A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ALC8X8425P;
 				INFOPLIST_FILE = HNAAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hna.eking.lili.HNAAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
