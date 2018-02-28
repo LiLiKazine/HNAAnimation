@@ -7,23 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09461B602044EE5D0086BAB9 /* HNALoading.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097F66B62043F5E0000095A1 /* HNALoading.framework */; };
-		09461B612044EE5D0086BAB9 /* HNALoading.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 097F66B62043F5E0000095A1 /* HNALoading.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		097F668B2043F5A7000095A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F668A2043F5A7000095A1 /* AppDelegate.swift */; };
 		097F668D2043F5A7000095A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F668C2043F5A7000095A1 /* ViewController.swift */; };
 		097F66902043F5A7000095A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097F668E2043F5A7000095A1 /* Main.storyboard */; };
 		097F66922043F5A7000095A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097F66912043F5A7000095A1 /* Assets.xcassets */; };
 		097F66952043F5A7000095A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097F66932043F5A7000095A1 /* LaunchScreen.storyboard */; };
+		09C6D7BD20469042008BB1FA /* HNALoading.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097F66B62043F5E0000095A1 /* HNALoading.framework */; };
+		09C6D7BE20469042008BB1FA /* HNALoading.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 097F66B62043F5E0000095A1 /* HNALoading.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		09461B622044EE5D0086BAB9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 097F66B12043F5DF000095A1 /* HNALoading.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 097F66A52043F5DF000095A1;
-			remoteInfo = HNALoading;
-		};
 		097F66B52043F5E0000095A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 097F66B12043F5DF000095A1 /* HNALoading.xcodeproj */;
@@ -31,16 +24,23 @@
 			remoteGlobalIDString = 097F66A62043F5DF000095A1;
 			remoteInfo = HNALoading;
 		};
+		09C6D7BF20469042008BB1FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 097F66B12043F5DF000095A1 /* HNALoading.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 097F66A52043F5DF000095A1;
+			remoteInfo = HNALoading;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		09461B642044EE5D0086BAB9 /* Embed Frameworks */ = {
+		09C6D7C120469042008BB1FA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				09461B612044EE5D0086BAB9 /* HNALoading.framework in Embed Frameworks */,
+				09C6D7BE20469042008BB1FA /* HNALoading.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09461B602044EE5D0086BAB9 /* HNALoading.framework in Frameworks */,
+				09C6D7BD20469042008BB1FA /* HNALoading.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,12 +118,12 @@
 				097F66832043F5A7000095A1 /* Sources */,
 				097F66842043F5A7000095A1 /* Frameworks */,
 				097F66852043F5A7000095A1 /* Resources */,
-				09461B642044EE5D0086BAB9 /* Embed Frameworks */,
+				09C6D7C120469042008BB1FA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				09461B632044EE5D0086BAB9 /* PBXTargetDependency */,
+				09C6D7C020469042008BB1FA /* PBXTargetDependency */,
 			);
 			name = HNAAnimation;
 			productName = HNAAnimation;
@@ -206,10 +206,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		09461B632044EE5D0086BAB9 /* PBXTargetDependency */ = {
+		09C6D7C020469042008BB1FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HNALoading;
-			targetProxy = 09461B622044EE5D0086BAB9 /* PBXContainerItemProxy */;
+			targetProxy = 09C6D7BF20469042008BB1FA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -346,11 +346,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ALC8X8425P;
+				DEVELOPMENT_TEAM = 247ZU7VL38;
 				INFOPLIST_FILE = HNAAnimation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hna.eking.lili.HNAAnimation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hna.eking.HNAAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -363,11 +363,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ALC8X8425P;
+				DEVELOPMENT_TEAM = 247ZU7VL38;
 				INFOPLIST_FILE = HNAAnimation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hna.eking.lili.HNAAnimation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hna.eking.HNAAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

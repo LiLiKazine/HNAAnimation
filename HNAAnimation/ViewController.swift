@@ -11,11 +11,13 @@ import HNALoading
 
 class ViewController: UIViewController {
 
+    private var animOn:Bool = false
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.layer.contents = UIImage(named: "far_cry_4_yeti")?.cgImage
         self.view.contentMode = .scaleAspectFill
-        HNALoading.getInstance.startCircling(parentView: self.view)
         let stopBtn = UIButton(frame: CGRect(x: self.view.center.x-40, y: 600, width: 80, height: 30))
         self.view.addSubview(stopBtn)
         stopBtn.addTarget(self, action: #selector(stop), for: .touchUpInside)
@@ -23,7 +25,8 @@ class ViewController: UIViewController {
     }
     
     @objc func stop(){
-        HNALoading.getInstance.stopCircling()
+        animOn ? HNALoading.getInstance.stopCircling() : HNALoading.getInstance.startCircling(parentView: self.view)
+        animOn = !animOn
     }
 
 }

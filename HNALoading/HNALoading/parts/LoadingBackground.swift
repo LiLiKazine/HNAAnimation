@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HNALoadingBackground: UIView {
+class LoadingBackground: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -18,7 +18,7 @@ class HNALoadingBackground: UIView {
     override func draw(_ rect: CGRect) {
         let rectPath = UIEdgeInsetsInsetRect(self.bounds, UIEdgeInsetsMake(1, 1, 1, 1))
         let beierPath = UIBezierPath(roundedRect: rectPath, cornerRadius: 10)
-        UIColor.init(red: 222, green: 222, blue: 222, alpha: 0.8).setFill()
+        UIColor.init(red: 0.9, green: 0.9, blue: 0.9, alpha: 0.8).setFill()
         beierPath.fill()
     }
     

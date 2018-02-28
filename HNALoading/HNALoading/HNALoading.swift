@@ -11,7 +11,7 @@ import UIKit
 public class HNALoading: NSObject {
     
     private var animView:UIView?
-    
+        
     static private let shared:HNALoading = HNALoading()
 
     private override init() {}
@@ -21,7 +21,7 @@ public class HNALoading: NSObject {
     }
     
     public func startCircling(parentView:UIView) {
-        animView = PlaneCircleEarthAnim()
+        animView = LettersBouncingAnim()
         animView?.center = parentView.center
         parentView.addSubview(animView!)
     }

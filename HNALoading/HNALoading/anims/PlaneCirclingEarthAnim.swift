@@ -8,21 +8,19 @@
 
 import UIKit
 
-class PlaneCircleEarthAnim: UIView, CAAnimationDelegate {
+class PlaneCirclingEarthAnim: UIView, CAAnimationDelegate {
     
-    let bundle = Bundle(for: PlaneCircleEarthAnim.self)
+    let bundle = Bundle(for: PlaneCirclingEarthAnim.self)
     
     var planeLayer:CALayer? = nil
     var earthLayer:CALayer? = nil
     
     var planeAnim:CAKeyframeAnimation? = nil
     var earthAnim:CAKeyframeAnimation? = nil
-    
-    var animLayers:[CALayer]? = nil
-    
+        
     private override init(frame: CGRect) {
         super.init(frame: frame)
-        let background: UIView = HNALoadingBackground(frame: frame)
+        let background: UIView = LoadingBackground(frame: frame)
         self.center = background.center
         self.addSubview(background)
         planeCircling()
@@ -64,7 +62,6 @@ class PlaneCircleEarthAnim: UIView, CAAnimationDelegate {
         self.addSubview(planeView)
         layer.add(circlingAnim, forKey: "circling")
         layer.add(angleAnim, forKey: "angle")
-        animLayers?.append(layer)
     }
     
     func earthOrbiting() {
@@ -82,7 +79,6 @@ class PlaneCircleEarthAnim: UIView, CAAnimationDelegate {
         earthView.center = self.center
         self.addSubview(earthView)
         layer.add(orbitingAnim, forKey: "orbiting")
-        animLayers?.append(layer)
     }
     
     
@@ -91,10 +87,10 @@ class PlaneCircleEarthAnim: UIView, CAAnimationDelegate {
     }
     
     func animationDidStart(_ anim: CAAnimation) {
-        print("start")
+        print("plane circling earth animation start")
     }
     
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-        print("anim stop")
+        print("plane circling earth start animation stop")
     }
 }

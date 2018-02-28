@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		09461B67204539670086BAB9 /* AnimationMake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09461B66204539670086BAB9 /* AnimationMake.swift */; };
-		09461B69204547DA0086BAB9 /* HNALoadingBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09461B68204547DA0086BAB9 /* HNALoadingBackground.swift */; };
+		09461B69204547DA0086BAB9 /* LoadingBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09461B68204547DA0086BAB9 /* LoadingBackground.swift */; };
 		097F66BC2043F648000095A1 /* HNALoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F66BB2043F648000095A1 /* HNALoading.swift */; };
-		097F66BF2043F7FF000095A1 /* PlaneCircleEarthAnim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F66BE2043F7FF000095A1 /* PlaneCircleEarthAnim.swift */; };
+		097F66BF2043F7FF000095A1 /* PlaneCirclingEarthAnim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F66BE2043F7FF000095A1 /* PlaneCirclingEarthAnim.swift */; };
+		09A27CC8204635AC001A85E3 /* LettersBouncingAnim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A27CC7204635AC001A85E3 /* LettersBouncingAnim.swift */; };
 		09D873FB2044003C00062CDD /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D873FA2044003C00062CDD /* image.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09461B66204539670086BAB9 /* AnimationMake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationMake.swift; sourceTree = "<group>"; };
-		09461B68204547DA0086BAB9 /* HNALoadingBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNALoadingBackground.swift; sourceTree = "<group>"; };
+		09461B68204547DA0086BAB9 /* LoadingBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBackground.swift; sourceTree = "<group>"; };
 		097F66A62043F5DF000095A1 /* HNALoading.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HNALoading.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		097F66AA2043F5DF000095A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		097F66BB2043F648000095A1 /* HNALoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNALoading.swift; sourceTree = "<group>"; };
-		097F66BE2043F7FF000095A1 /* PlaneCircleEarthAnim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneCircleEarthAnim.swift; sourceTree = "<group>"; };
+		097F66BE2043F7FF000095A1 /* PlaneCirclingEarthAnim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneCirclingEarthAnim.swift; sourceTree = "<group>"; };
+		09A27CC7204635AC001A85E3 /* LettersBouncingAnim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersBouncingAnim.swift; sourceTree = "<group>"; };
 		09D873FA2044003C00062CDD /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,7 +55,7 @@
 		09461B6C20454F290086BAB9 /* parts */ = {
 			isa = PBXGroup;
 			children = (
-				09461B68204547DA0086BAB9 /* HNALoadingBackground.swift */,
+				09461B68204547DA0086BAB9 /* LoadingBackground.swift */,
 			);
 			path = parts;
 			sourceTree = "<group>";
@@ -81,19 +83,20 @@
 			children = (
 				09461B6C20454F290086BAB9 /* parts */,
 				09461B65204539490086BAB9 /* tools */,
-				097F66BD2043F7B2000095A1 /* circling */,
+				097F66BD2043F7B2000095A1 /* anims */,
 				097F66AA2043F5DF000095A1 /* Info.plist */,
 				097F66BB2043F648000095A1 /* HNALoading.swift */,
 			);
 			path = HNALoading;
 			sourceTree = "<group>";
 		};
-		097F66BD2043F7B2000095A1 /* circling */ = {
+		097F66BD2043F7B2000095A1 /* anims */ = {
 			isa = PBXGroup;
 			children = (
-				097F66BE2043F7FF000095A1 /* PlaneCircleEarthAnim.swift */,
+				097F66BE2043F7FF000095A1 /* PlaneCirclingEarthAnim.swift */,
+				09A27CC7204635AC001A85E3 /* LettersBouncingAnim.swift */,
 			);
-			path = circling;
+			path = anims;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,9 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				097F66BF2043F7FF000095A1 /* PlaneCircleEarthAnim.swift in Sources */,
+				097F66BF2043F7FF000095A1 /* PlaneCirclingEarthAnim.swift in Sources */,
+				09A27CC8204635AC001A85E3 /* LettersBouncingAnim.swift in Sources */,
 				097F66BC2043F648000095A1 /* HNALoading.swift in Sources */,
-				09461B69204547DA0086BAB9 /* HNALoadingBackground.swift in Sources */,
+				09461B69204547DA0086BAB9 /* LoadingBackground.swift in Sources */,
 				09461B67204539670086BAB9 /* AnimationMake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
