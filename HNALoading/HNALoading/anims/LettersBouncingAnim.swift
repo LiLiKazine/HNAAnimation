@@ -27,7 +27,7 @@ class LettersBouncingAnim: UIView {
                 view.contentMode = .scaleAspectFit
                 view.center.y = self.center.y
                 view.center.x = self.center.x - 30.00 + CGFloat(idx) * 30.00
-                setupLetterAnimations(letter: view, delay: Double(idx) * 0.6)
+                setupLetterAnimations(letter: view, idx: idx)
                 self.addSubview(view)
                 views.append(view)
             }
@@ -40,30 +40,25 @@ class LettersBouncingAnim: UIView {
         self.init(frame: CGRect(x: 0, y: 0, width: 90, height: 30))
     }
     
-    func setupLetterAnimations(letter:UIView, delay:Double) {
-        UIView.animate(withDuration: 0.3, delay: delay, options: [.repeat, .autoreverse, .curveLinear], animations: {
-            letter.layer.position.y -= 30
-        }, completion: nil)
-        if #available(iOS 10.0, *) {
-            var flag:Bool = true
-            let _ = Timer.scheduledTimer(withTimeInterval: 0.6, repeats: true, block: {_ in 
-                if (flag){
-                    self.pauseAnim(view: letter)
-                }
-                
-                flag = false
-            })
-            
-            let _ = Timer.scheduledTimer(withTimeInterval: 1.8, repeats: true, block: {_ in 
-                if (!flag){
-                    self.pauseAnim(view: letter)
-                }
-                flag = true
-            })
+    func setupLetterAnimations(letter:UIView, idx:Int) {
+        //parameters
+        let y = letter.layer.position.y
+        let duration:CFTimeInterval = 0.6
+        let beginTime = CACurrentMediaTime()
+        let beginTimeOffsets = [0.1, 0.25, 0.4]
+        let timingFunction = CAMediaTimingFunction(controlPoints: 0.2, 0.68, 0.18, 1.08)
         
-        } else {
-            // Fallback on earlier versions
-        }        
+        //animation
+        let anim:CAKeyframeAnimation = CAKeyframeAnimation(keyPath: "transform.translation.y")
+        anim.keyTimes = [0, 0.3, 0.6]
+        anim.timingFunctions = [timingFunction, timingFunction]
+        anim.values = [y, y-30, y]
+        anim.duration = duration
+        anim.repeatCount = HUGE
+        anim.isRemovedOnCompletion = false
+        anim.beginTime = beginTime + beginTimeOffsets[idx]
+        
+        letter.layer.add(anim, forKey: "bouncing")
     }
     
     
