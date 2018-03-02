@@ -7,29 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09461B67204539670086BAB9 /* AnimationMake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09461B66204539670086BAB9 /* AnimationMake.swift */; };
-		09461B69204547DA0086BAB9 /* LoadingBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09461B68204547DA0086BAB9 /* LoadingBackground.swift */; };
-		097F66BC2043F648000095A1 /* HNALoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F66BB2043F648000095A1 /* HNALoading.swift */; };
-		097F66BF2043F7FF000095A1 /* PlaneCirclingEarthAnim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F66BE2043F7FF000095A1 /* PlaneCirclingEarthAnim.swift */; };
-		09A27CC8204635AC001A85E3 /* LettersBouncingAnim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A27CC7204635AC001A85E3 /* LettersBouncingAnim.swift */; };
-		09CBD61620479C3A0031C392 /* RippleBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CBD61520479C3A0031C392 /* RippleBackground.swift */; };
-		09D873FB2044003C00062CDD /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D873FA2044003C00062CDD /* image.xcassets */; };
+		092EFF7D2048DFF800D3D427 /* FadeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EFF7C2048DFF800D3D427 /* FadeAnimator.swift */; };
+		098F09712048DE87007EB731 /* HNATransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F09702048DE87007EB731 /* HNATransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		09461B66204539670086BAB9 /* AnimationMake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationMake.swift; sourceTree = "<group>"; };
-		09461B68204547DA0086BAB9 /* LoadingBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBackground.swift; sourceTree = "<group>"; };
-		097F66A62043F5DF000095A1 /* HNALoading.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HNALoading.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		097F66AA2043F5DF000095A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		097F66BB2043F648000095A1 /* HNALoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNALoading.swift; sourceTree = "<group>"; };
-		097F66BE2043F7FF000095A1 /* PlaneCirclingEarthAnim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneCirclingEarthAnim.swift; sourceTree = "<group>"; };
-		09A27CC7204635AC001A85E3 /* LettersBouncingAnim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersBouncingAnim.swift; sourceTree = "<group>"; };
-		09CBD61520479C3A0031C392 /* RippleBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleBackground.swift; sourceTree = "<group>"; };
-		09D873FA2044003C00062CDD /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
+		092EFF7C2048DFF800D3D427 /* FadeAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeAnimator.swift; sourceTree = "<group>"; };
+		098F095E2048D990007EB731 /* HNATransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HNATransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		098F09622048D990007EB731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		098F09702048DE87007EB731 /* HNATransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNATransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		097F66A22043F5DF000095A1 /* Frameworks */ = {
+		098F095A2048D990007EB731 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,65 +29,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09461B522044E1F60086BAB9 /* Frameworks */ = {
+		098F09542048D990007EB731 = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		09461B65204539490086BAB9 /* tools */ = {
-			isa = PBXGroup;
-			children = (
-				09461B66204539670086BAB9 /* AnimationMake.swift */,
-			);
-			path = tools;
-			sourceTree = "<group>";
-		};
-		09461B6C20454F290086BAB9 /* parts */ = {
-			isa = PBXGroup;
-			children = (
-				09461B68204547DA0086BAB9 /* LoadingBackground.swift */,
-				09CBD61520479C3A0031C392 /* RippleBackground.swift */,
-			);
-			path = parts;
-			sourceTree = "<group>";
-		};
-		097F669C2043F5DF000095A1 = {
-			isa = PBXGroup;
-			children = (
-				09D873FA2044003C00062CDD /* image.xcassets */,
-				097F66A82043F5DF000095A1 /* HNALoading */,
-				097F66A72043F5DF000095A1 /* Products */,
-				09461B522044E1F60086BAB9 /* Frameworks */,
+				098F09602048D990007EB731 /* HNATransition */,
+				098F095F2048D990007EB731 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		097F66A72043F5DF000095A1 /* Products */ = {
+		098F095F2048D990007EB731 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				097F66A62043F5DF000095A1 /* HNALoading.framework */,
+				098F095E2048D990007EB731 /* HNATransition.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		097F66A82043F5DF000095A1 /* HNALoading */ = {
+		098F09602048D990007EB731 /* HNATransition */ = {
 			isa = PBXGroup;
 			children = (
-				09461B6C20454F290086BAB9 /* parts */,
-				09461B65204539490086BAB9 /* tools */,
-				097F66BD2043F7B2000095A1 /* anims */,
-				097F66AA2043F5DF000095A1 /* Info.plist */,
-				097F66BB2043F648000095A1 /* HNALoading.swift */,
+				098F096F2048DE58007EB731 /* anims */,
+				098F09622048D990007EB731 /* Info.plist */,
+				098F09702048DE87007EB731 /* HNATransition.swift */,
 			);
-			path = HNALoading;
+			path = HNATransition;
 			sourceTree = "<group>";
 		};
-		097F66BD2043F7B2000095A1 /* anims */ = {
+		098F096F2048DE58007EB731 /* anims */ = {
 			isa = PBXGroup;
 			children = (
-				097F66BE2043F7FF000095A1 /* PlaneCirclingEarthAnim.swift */,
-				09A27CC7204635AC001A85E3 /* LettersBouncingAnim.swift */,
+				092EFF7C2048DFF800D3D427 /* FadeAnimator.swift */,
 			);
 			path = anims;
 			sourceTree = "<group>";
@@ -105,7 +66,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		097F66A32043F5DF000095A1 /* Headers */ = {
+		098F095B2048D990007EB731 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,86 +76,81 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		097F66A52043F5DF000095A1 /* HNALoading */ = {
+		098F095D2048D990007EB731 /* HNATransition */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 097F66AE2043F5DF000095A1 /* Build configuration list for PBXNativeTarget "HNALoading" */;
+			buildConfigurationList = 098F09662048D990007EB731 /* Build configuration list for PBXNativeTarget "HNATransition" */;
 			buildPhases = (
-				097F66A12043F5DF000095A1 /* Sources */,
-				097F66A22043F5DF000095A1 /* Frameworks */,
-				097F66A32043F5DF000095A1 /* Headers */,
-				097F66A42043F5DF000095A1 /* Resources */,
+				098F09592048D990007EB731 /* Sources */,
+				098F095A2048D990007EB731 /* Frameworks */,
+				098F095B2048D990007EB731 /* Headers */,
+				098F095C2048D990007EB731 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HNALoading;
-			productName = HNALoading;
-			productReference = 097F66A62043F5DF000095A1 /* HNALoading.framework */;
+			name = HNATransition;
+			productName = HNATransition;
+			productReference = 098F095E2048D990007EB731 /* HNATransition.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		097F669D2043F5DF000095A1 /* Project object */ = {
+		098F09552048D990007EB731 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Hainan eKing Technology Co., Ltd.";
 				TargetAttributes = {
-					097F66A52043F5DF000095A1 = {
+					098F095D2048D990007EB731 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 097F66A02043F5DF000095A1 /* Build configuration list for PBXProject "HNALoading" */;
+			buildConfigurationList = 098F09582048D990007EB731 /* Build configuration list for PBXProject "HNATransition" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 097F669C2043F5DF000095A1;
-			productRefGroup = 097F66A72043F5DF000095A1 /* Products */;
+			mainGroup = 098F09542048D990007EB731;
+			productRefGroup = 098F095F2048D990007EB731 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				097F66A52043F5DF000095A1 /* HNALoading */,
+				098F095D2048D990007EB731 /* HNATransition */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		097F66A42043F5DF000095A1 /* Resources */ = {
+		098F095C2048D990007EB731 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09D873FB2044003C00062CDD /* image.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		097F66A12043F5DF000095A1 /* Sources */ = {
+		098F09592048D990007EB731 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				097F66BF2043F7FF000095A1 /* PlaneCirclingEarthAnim.swift in Sources */,
-				09A27CC8204635AC001A85E3 /* LettersBouncingAnim.swift in Sources */,
-				097F66BC2043F648000095A1 /* HNALoading.swift in Sources */,
-				09CBD61620479C3A0031C392 /* RippleBackground.swift in Sources */,
-				09461B69204547DA0086BAB9 /* LoadingBackground.swift in Sources */,
-				09461B67204539670086BAB9 /* AnimationMake.swift in Sources */,
+				092EFF7D2048DFF800D3D427 /* FadeAnimator.swift in Sources */,
+				098F09712048DE87007EB731 /* HNATransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		097F66AC2043F5DF000095A1 /* Debug */ = {
+		098F09642048D990007EB731 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -254,7 +210,7 @@
 			};
 			name = Debug;
 		};
-		097F66AD2043F5DF000095A1 /* Release */ = {
+		098F09652048D990007EB731 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -307,7 +263,7 @@
 			};
 			name = Release;
 		};
-		097F66AF2043F5DF000095A1 /* Debug */ = {
+		098F09672048D990007EB731 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -318,11 +274,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = HNALoading/Info.plist;
+				INFOPLIST_FILE = HNATransition/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hna.eking.lili.HNALoading;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hna.eking..HNATransition;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -331,7 +287,7 @@
 			};
 			name = Debug;
 		};
-		097F66B02043F5DF000095A1 /* Release */ = {
+		098F09682048D990007EB731 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -342,11 +298,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = HNALoading/Info.plist;
+				INFOPLIST_FILE = HNATransition/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hna.eking.lili.HNALoading;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hna.eking..HNATransition;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -357,25 +313,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		097F66A02043F5DF000095A1 /* Build configuration list for PBXProject "HNALoading" */ = {
+		098F09582048D990007EB731 /* Build configuration list for PBXProject "HNATransition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				097F66AC2043F5DF000095A1 /* Debug */,
-				097F66AD2043F5DF000095A1 /* Release */,
+				098F09642048D990007EB731 /* Debug */,
+				098F09652048D990007EB731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		097F66AE2043F5DF000095A1 /* Build configuration list for PBXNativeTarget "HNALoading" */ = {
+		098F09662048D990007EB731 /* Build configuration list for PBXNativeTarget "HNATransition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				097F66AF2043F5DF000095A1 /* Debug */,
-				097F66B02043F5DF000095A1 /* Release */,
+				098F09672048D990007EB731 /* Debug */,
+				098F09682048D990007EB731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 097F669D2043F5DF000095A1 /* Project object */;
+	rootObject = 098F09552048D990007EB731 /* Project object */;
 }

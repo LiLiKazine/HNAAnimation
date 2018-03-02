@@ -8,11 +8,14 @@
 
 import UIKit
 import HNALoading
+import HNATransition
 
 class ViewController: UIViewController {
 
     private var circling:Bool = false
     private var bouncing:Bool = false
+    
+    var transition:UIViewControllerAnimatedTransitioning? = nil
 
     
     override func viewDidLoad() {
@@ -32,5 +35,24 @@ class ViewController: UIViewController {
         bouncing = !bouncing
     }
     
+    
+    @IBAction func fade(_ sender: UIButton) {
+        transition = HNATransition.getInstance.fade()
+        let secondVC = storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        secondVC.transitioningDelegate = self
+        self.present(secondVC, animated: true, completion: {print("presented.")})
+        
+    }
+    
+}
+
+extension ViewController:UIViewControllerTransitioningDelegate{
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return transition
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return transition
+    }
 }
 
