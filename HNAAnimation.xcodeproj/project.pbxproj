@@ -13,6 +13,8 @@
 		097F66902043F5A7000095A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097F668E2043F5A7000095A1 /* Main.storyboard */; };
 		097F66922043F5A7000095A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097F66912043F5A7000095A1 /* Assets.xcassets */; };
 		097F66952043F5A7000095A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097F66932043F5A7000095A1 /* LaunchScreen.storyboard */; };
+		09960575204F71200031A81B /* HNATransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098F096E2048D991007EB731 /* HNATransition.framework */; };
+		09960576204F71200031A81B /* HNATransition.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 098F096E2048D991007EB731 /* HNATransition.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		09C6D7BD20469042008BB1FA /* HNALoading.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097F66B62043F5E0000095A1 /* HNALoading.framework */; };
 		09C6D7BE20469042008BB1FA /* HNALoading.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 097F66B62043F5E0000095A1 /* HNALoading.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -32,6 +34,13 @@
 			remoteGlobalIDString = 098F095E2048D990007EB731;
 			remoteInfo = HNATransition;
 		};
+		09960577204F71200031A81B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 098F09692048D990007EB731 /* HNATransition.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 098F095D2048D990007EB731;
+			remoteInfo = HNATransition;
+		};
 		09C6D7BF20469042008BB1FA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 097F66B12043F5DF000095A1 /* HNALoading.xcodeproj */;
@@ -49,6 +58,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				09C6D7BE20469042008BB1FA /* HNALoading.framework in Embed Frameworks */,
+				09960576204F71200031A81B /* HNATransition.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09C6D7BD20469042008BB1FA /* HNALoading.framework in Frameworks */,
+				09960575204F71200031A81B /* HNATransition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +155,7 @@
 			);
 			dependencies = (
 				09C6D7C020469042008BB1FA /* PBXTargetDependency */,
+				09960578204F71200031A81B /* PBXTargetDependency */,
 			);
 			name = HNAAnimation;
 			productName = HNAAnimation;
@@ -238,6 +250,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		09960578204F71200031A81B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HNATransition;
+			targetProxy = 09960577204F71200031A81B /* PBXContainerItemProxy */;
+		};
 		09C6D7C020469042008BB1FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HNALoading;

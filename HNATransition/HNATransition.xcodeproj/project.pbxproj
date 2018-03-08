@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		092EFF7D2048DFF800D3D427 /* FadeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EFF7C2048DFF800D3D427 /* FadeAnimator.swift */; };
 		098F09712048DE87007EB731 /* HNATransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F09702048DE87007EB731 /* HNATransition.swift */; };
+		0996057A204F71B60031A81B /* ButtonScaleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09960579204F71B60031A81B /* ButtonScaleAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		098F095E2048D990007EB731 /* HNATransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HNATransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		098F09622048D990007EB731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		098F09702048DE87007EB731 /* HNATransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNATransition.swift; sourceTree = "<group>"; };
+		09960579204F71B60031A81B /* ButtonScaleAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonScaleAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				092EFF7C2048DFF800D3D427 /* FadeAnimator.swift */,
+				09960579204F71B60031A81B /* ButtonScaleAnimator.swift */,
 			);
 			path = anims;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0996057A204F71B60031A81B /* ButtonScaleAnimator.swift in Sources */,
 				092EFF7D2048DFF800D3D427 /* FadeAnimator.swift in Sources */,
 				098F09712048DE87007EB731 /* HNATransition.swift in Sources */,
 			);

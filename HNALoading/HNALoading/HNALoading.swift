@@ -22,6 +22,7 @@ public class HNALoading: NSObject {
     
     public func stopAnim(){
         animView?.removeFromSuperview()
+        animView = nil
     }
     
     public func startCircling(parentView:UIView) {
