@@ -41,17 +41,17 @@ class ButtonScaleAnimator: NSObject, UIViewControllerAnimatedTransitioning, UIVi
         animatedViewForTransition.layer.cornerRadius = animatedViewForTransition.frame.height / 2.0
         animatedViewForTransition.backgroundColor = self.startBackgroundColor
         
-        let presentedViewController: UIViewController
+        let presentedController: UIViewController
         
         if !self.isReverse {
-            presentedViewController = transitionContext.viewController(forKey: .to)!
-            presentedViewController.view.layer.opacity = 0
+            presentedController = transitionContext.viewController(forKey: .to)!
+            presentedController.view.layer.opacity = 0
         } else {
-            presentedViewController = transitionContext.viewController(forKey: .from)!
+            presentedController = transitionContext.viewController(forKey: .from)!
         }
         
-        presentedViewController.view.frame = transitionContext.containerView.bounds
-        transitionContext.containerView.addSubview(presentedViewController.view)
+        presentedController.view.frame = transitionContext.containerView.bounds
+        transitionContext.containerView.addSubview(presentedController.view)
         
         let size = max(transitionContext.containerView.bounds.height, transitionContext.containerView.bounds.width) * 1.2
         let scaleFactor = size / animatedViewForTransition.bounds.width
@@ -61,10 +61,42 @@ class ButtonScaleAnimator: NSObject, UIViewControllerAnimatedTransitioning, UIVi
             UIView.transition(with: animatedViewForTransition, duration: self.transitionDuration(using: transitionContext) * 0.7, options: [], animations: { 
                 animatedViewForTransition.transform = finalTransform
                 animatedViewForTransition.center = transitionContext.containerView.center
-                animatedViewForTransition.backgroundColor = presentedViewController.view.backgroundColor
+                animatedViewForTransition.backgroundColor = presentedController.view.backgroundColor
                 }, completion: {(_) in
             })
+            UIView.animate(withDuration: self.transitionDuration(using: transitionContext) * 0.42, delay: self.transitionDuration(using: transitionContext) * 0.58, options: [], animations: {
+                presentedController.view.layer.opacity = 1
+            }, completion: {(_) in
+                animatedViewForTransition.removeFromSuperview()
+                transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+            })
+        }
+        else {
+            animatedViewForTransition.transform = finalTransform
+            animatedViewForTransition.center = transitionContext.containerView.center
+            animatedViewForTransition.backgroundColor = presentedController.view.backgroundColor
+            
+            UIView.animate(withDuration: self.transitionDuration(using: transitionContext) * 0.7, animations: { presentedController.view.layer.opacity = 0})
+            DispatchQueue.main.asyncAfter(deadline: .now() + self.transitionDuration(using: transitionContext) * 0.32) {
+                UIView.transition(with: animatedViewForTransition, duration: self.transitionDuration(using: transitionContext) * 0.8, options: [], animations: {
+                    animatedViewForTransition.transform = CGAffineTransform.identity
+                    animatedViewForTransition.backgroundColor = self.startBackgroundColor
+                    animatedViewForTransition.frame = startFrame
+                }, completion: {(_) in
+                    animatedViewForTransition.removeFromSuperview()
+                    transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+                })
+            }
         }
     }
     
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        self.isReverse = false
+        return self
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        self.isReverse = true
+        return self
+    }
 }
